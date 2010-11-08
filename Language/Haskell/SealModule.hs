@@ -72,7 +72,7 @@ sealModule declQ = do
 
     fn <- funD comb [
             clause (map varP paramNames)
-                   (normalB (tupE (map (return . VarE) definedNames)))
+                   (normalB (tupE (map varE definedNames)))
                    (map return real)
             ]
     let types = case findParamTypes paramNames decl of
