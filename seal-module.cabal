@@ -1,5 +1,5 @@
 Name:                seal-module
-Version:             0.1
+Version:             0.1.0.1
 Synopsis:            Template Haskell support for global configuration data
 Description:         A template haskell function is provided that allows the
                      programmer to write a module as if configuration values
@@ -18,5 +18,5 @@ Build-type:          Simple
 Cabal-version:       >=1.2
 
 Library
-  Exposed-modules:     SealModule
+  Exposed-modules:     Language.Haskell.SealModule
   Build-depends:       base >= 3 && <5, template-haskell

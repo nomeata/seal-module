@@ -1,6 +1,6 @@
 {-# LANGUAGE TemplateHaskell #-}
 {- |
-   Module     : SealModule
+   Module     : Language.Haskell.SealModule
    Copyright  : Copyright (C) 2010 Joachim Breitner
    License    : BSD3
 
@@ -18,7 +18,7 @@ deep in the call stack requires some configuration data without having to
 pass these paramters around explicitly.
 -}
 
-module SealModule (
+module Language.Haskell.SealModule (
 -- * Example
 -- $example
 
@@ -131,7 +131,7 @@ Consider the following minimal example:
 @
 
 >module Example1 where
->import SealModule
+>import Language.Haskell.SealModule
 >import Control.Monad
 >
 >sealModule [d|
@@ -168,7 +168,7 @@ functions' signature, you can use record wildcards:
 @
 
 >module Example2 where
->import SealModule
+>import Language.Haskell.SealModule
 >import Control.Monad
 >
 >data Config = Config { verbose :: Bool, increment :: Int }
@@ -206,7 +206,7 @@ data type. No function signatures change this way.
 @
 
 >module Example1 where
->import SealModule
+>import Language.Haskell.SealModule
 >import Control.Monad
 >
 >sealModule [d|
